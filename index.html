@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/tablet.css"/>
     <link rel="stylesheet" href="./css/mobile.css"/>
     <title>Assignment02</title>
   </head>
@@ -61,6 +62,11 @@
             <td><i class="icon-gplus"></i></td>
             <td><i class="icon-linkedin"></i></td>
           </div>
+          <div class="box3__login">
+            <label for="" class="box3__login--tieude">Thông tin cá nhân</label>
+            <input type="email" placeholder="Enter your email" class="box3__login--email">
+            <button class="box3__login--submit">SUBMIT</button>
+          </div>
         </div>
       </div>
       <div class="box04">
@@ -69,7 +75,8 @@
             <h1 class="box4__tieude">Kinh nghiệm</h1>
             <td class="iconheader"><i class="ic-toolbox icon2"></i></td>
           </div>
-          <ul class="box4__list">
+          <button class="viewmore vm1">View more</button>
+          <ul class="box4__list list1">
             <li class="box4__list--tieude"><h3 class="box4__list--tieude--items">Java Backend Developer</h3>
               <ul class="box4__list--items">
                 <p class="time">5/2020 - <span class="span2">hiện tại</span></p>
@@ -93,7 +100,8 @@
             <h1 class="box4__tieude">Học vấn</h1>
             <td class="iconheader"><i class="ic-pencil icon2"></i></td>
           </div>
-          <ul class="box4__list">
+          <button class="viewmore vm2">View more</button>
+          <ul class="box4__list list2">
             <li class="box4__list--tieude"><h3 class="box4__list--tieude--items">FUNiX</h3>
               <ul class="box4__list--items">
                 <p class="time">5/2020 - 5/2022</p>
@@ -115,7 +123,8 @@
             <h1 class="box4__tieude">Hoạt động</h1>
             <td class="iconheader"><i class="ic-toolbox icon2"></i></td>
           </div>
-          <ul class="box4__list">
+          <button class="viewmore vm3">View more</button>
+          <ul class="box4__list list3">
             <li class="box4__list--tieude"><h3 class="box4__list--tieude--items">FPT Edu Hackathon 2019 </h3>
               <ul class="box4__list--items">
                 <p class="time">5/2020 - 5/2022</p>
@@ -136,7 +145,8 @@
             <h1 class="box4__tieude">Sở thích</h1>
             <td class="iconheader"><i class="ic-telescope icon2"></i></td>
           </div>
-          <div class="box4__sothich">
+          <button class="viewmore vm4">View more</button>
+          <div class="box4__sothich list4">
             <div class="box4__sothich--item">
               <td class="iconitem"><i class="ic-megaphone icon3"></i></td>
               <p class="box4__sothich--item--text">Âm nhạc</p>
@@ -160,7 +170,8 @@
             <h1 class="box4__tieude">Ngôn ngữ</h1>
             <td class="iconheader"><i class="ic-mic icon2"></i></td>
           </div>
-          <div class="box4__items">
+          <button class="viewmore vm5">View more</button>
+          <div class="box4__items list5">
             <h3 class="box4__list--tieude--items">Tiếng Anh-IELTS 9.0</h3>
             <div class="box4__boxdiv">
               <div class="div1"></div>
@@ -180,7 +191,8 @@
             <h1 class="box4__tieude">Kỹ Năng</h1>
             <td class="iconheader"><i class="ic-tools-2 icon2"></i></td>
           </div>
-          <div class="box4__items">
+          <button class="viewmore vm6">View more</button>
+          <div class="box4__items list6">
             <h3 class="box4__list--tieude--items">HTML/CSS Fundamental</h3>
             <div class="box4__boxdiv">
               <div class="div1"></div>
@@ -242,9 +254,11 @@
       <div class="box06">
         <h1 class="box06__tieude">Dự án</h1>
         <div class="box06__items">
+          <a class="link" href="./css/newweb.html">
           <img src="./images/web1.png" alt="" class="box06__items--img">
           <img src="./images/web2.png" alt="" class="box06__items--img">
           <img src="./images/web3.png" alt="" class="box06__items--img">
+          </a>
         </div>
       </div>
       <div class="box07">
@@ -270,5 +284,6 @@
         </div>
       </div>
     </div>
+    <script type="module" src="./script/main.js"></script>
   </body>
 </html>

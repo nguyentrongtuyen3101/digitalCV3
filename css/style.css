@@ -70,8 +70,43 @@
     background-color: #f0f0f0;
     padding-left: 80px;
     padding-top: 70px;
+    position: relative;
 }
-.box3_item1-tieude,.box3_item2-tieude{
+.box3__login{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    top: 0;
+    left: 0;
+    padding-left: 80px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.box3__login--tieude{
+    font-size: 30px;
+}
+.box3__login--submit{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #1a9ddc;
+    border: 1px solid #1a9ddc;
+    color: white;
+    cursor: pointer;
+}
+.box3__login--submit:hover{
+    transform: scale(1.1);
+}
+.box3__login--email{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: black;
+}
+.box3_item1-tieude,.box3_item2-tieude,.box3__login--tieude{
     font-weight: lighter;
 }
 .box3_item1-noidung,.box3_item2-noidung{
@@ -92,13 +127,15 @@
     margin-left: 15%;
     display: grid;
     grid-template-columns: repeat(3,31%);
-    grid-template-rows: 670px 450px;
+    grid-template-rows: auto ;
     justify-content: space-around;
     margin-top: 30px;
     row-gap: 23px;
+    overflow: visible;
 }
 .box04__items1,.box04__items2,.box04__items3,.box04__items4,.box04__items5,.box04__items6{
     border: 2px solid  #f0f0f0;
+    position: relative;  
 }
 .box04__tieudeicon{
     display:flex;
@@ -143,6 +180,42 @@
 .box4__list--items li::marker,.box05__content--list li::marker{
     content: "- ";
     color: #B7B7B7;
+}
+.viewmore{
+    width: 80px;
+    height: 20px;
+    background-color: #FFFAB3;
+    border: 1px solid #FFFAB3;
+    color:sienna;
+    font-weight: lighter;
+    border-radius: 10px;
+    font-size: 10px;
+    left: 20px;
+    top: 115px;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+}
+.viewmore:hover{
+    opacity: 0.8;
+}
+.box04__items1:hover .vm1{
+    display: block;
+}
+.box04__items2:hover .vm2{
+    display: block;
+}
+.box04__items3:hover .vm3{
+    display: block;
+}
+.box04__items4:hover .vm4{
+    display: block;
+}
+.box04__items5:hover .vm5{
+    display: block;
+}
+.box04__items6:hover .vm6{
+    display: block;
 }
 .span2{
     border: #1a9ddc solid 3px;
@@ -255,7 +328,7 @@
 .box06__tieude{
     font-weight: lighter;
 }
-.box06__items{
+.box06__items,.link{
     width: 100%;
     display: flex;
     justify-content: space-between;

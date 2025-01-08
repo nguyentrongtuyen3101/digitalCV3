@@ -1,0 +1,214 @@
+<html>
+<head>
+    <title>Web Page Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            border: 10px solid blue;
+        }
+        .box {
+            background-color: #f0f8ff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 30%;
+            box-sizing: border-box;
+        }
+        .box h2 {
+            color: blue;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .goals, .team, .timeline, .scopes, .primary {
+            width: 100%;
+        }
+        .goals .goal, .team .member, .timeline .event, .primary .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .goals .goal i, .team .member i, .primary .item i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .timeline .event {
+            display: flex;
+            align-items: center;
+        }
+        .timeline .event .circle {
+            width: 30px;
+            height: 30px;
+            background-color: #b0c4de;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            color: white;
+        }
+        .scopes .scope {
+            display: flex;
+            justify-content: space-between;
+        }
+        .scopes .scope div {
+            width: 45%;
+        }
+        @media (max-width: 768px) {
+            .box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box goals">
+            <h2>Goals</h2>
+            <div class="goal">
+                <i class="fas fa-flag"></i>
+                <div>
+                    <strong>Goal 1</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto error ipsa optio quibusdam.</p>
+                </div>
+            </div>
+            <div class="goal">
+                <i class="fas fa-flag"></i>
+                <div>
+                    <strong>Goal 2</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto error ipsa optio quibusdam.</p>
+                </div>
+            </div>
+            <div class="goal">
+                <i class="fas fa-flag"></i>
+                <div>
+                    <strong>Goal 3</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto error ipsa optio quibusdam.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box team">
+            <h2>Team</h2>
+            <div class="member">
+                <i class="fas fa-user"></i>
+                <div>
+                    <strong>Member 01</strong>
+                    <p>NGuyễn Trọng Tuyền</p>
+                </div>
+            </div>
+            <div class="member">
+                <i class="fas fa-user"></i>
+                <div>
+                    <strong>Member 02</strong>
+                    <p>NGuyễn Trọng Toàn</p>
+                </div>
+            </div>
+            <div class="member">
+                <i class="fas fa-user"></i>
+                <div>
+                    <strong>Member 03</strong>
+                    <p>NGuyễn Trọng Tùng</p>
+                </div>
+            </div>
+            <div class="member">
+                <i class="fas fa-user"></i>
+                <div>
+                    <strong>Member 04</strong>
+                    <p>NGuyễn Trọng Tú</p>
+                </div>
+            </div>
+        </div>
+        <div class="box timeline">
+            <h2>Timeline</h2>
+            <div class="event">
+                <div class="circle">01</div>
+                <div>
+                    <strong>Project Start</strong>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="circle">02</div>
+                <div>
+                    <strong>Project Date</strong>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="circle">03</div>
+                <div>
+                    <strong>Project Date</strong>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="circle">04</div>
+                <div>
+                    <strong>Project Date</strong>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="circle">05</div>
+                <div>
+                    <strong>Project Date</strong>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="circle">06</div>
+                <div>
+                    <strong>Project Date</strong>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="circle">07</div>
+                <div>
+                    <strong>Project Date</strong>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box scopes">
+            <h2>Scopes</h2>
+            <div class="scope">
+                <div>
+                    <strong>IN</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, illum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, illum.</p>
+                </div>
+                <div>
+                    <strong>OUT</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, illum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, illum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box primary">
+            <h2>Primary</h2>
+            <div class="item">
+                <i class="fas fa-question-circle"></i>
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, sint?</p>
+                </div>
+            </div>
+            <div class="item">
+                <i class="fas fa-question-circle"></i>
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, sint?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
